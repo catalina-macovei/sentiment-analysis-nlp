@@ -1,7 +1,7 @@
 # Sentiment Analysis NLP project
 - In this project we make binary and multi-class sentiment analysis.
 - The reviews are in many languages, so we have to detect first which language is used then decide wherever review is positive or negative.
-- The training dataset is ```imdb_reviews.csv``` movie reviews. But it is only for available for binary sentiment analysis. We have to make multi-class analysis.
+- The training dataset is ```imdb_reviews.csv``` movie reviews. But it is only available for binary sentiment analysis. We have to make multi-class analysis.
 
 ![workflow-diagram.png](diagrams/workflow-diagram.png)
 
