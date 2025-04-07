@@ -12,3 +12,7 @@
 4. Activate your ```.venv```
 5. Install ```jupyter notebooks```.
 6. Enjoy coding!
+
+## The process
+### Text preprocessing
+At this step we clean, translate, tokenize, lemmatize the reviews if needed.
