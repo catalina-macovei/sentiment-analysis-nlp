@@ -16,3 +16,33 @@
 ## The process
 ### Text preprocessing
 At this step we clean, translate, tokenize, lemmatize the reviews if needed.
+
+### Classification
+
+#### Aproach
+We classified IMDB movie reviews as positive (1) or negative (0). Preprocessed text using TF-IDF vectorization. 
+
+Trained two models:
+1. Logistic Regression
+2. Random Forest Classifier
+
+#### Model Performance Summary
+| Metric         | Logistic Regression | Random Forest |
+|----------------|---------------------|----------------|
+| **Accuracy**   | **0.86**            | 0.82           |
+| **Precision (0)** | 0.89              | 0.82           |
+| **Recall (0)**    | 0.83              | 0.83           |
+| **Precision (1)** | 0.84              | 0.82           |
+| **Recall (1)**    | 0.89              | 0.81           |
+| **F1-score (avg)**| 0.86              | 0.82           |
+| **ROC AUC**       | **0.937**         | 0.904          |
+
+#### Confusion Matrix:
+| Type                | Predicted Negative | Predicted Positive |
+|---------------------|---|---|
+| **Actual Negative** | 83% (Correct)       | 17% (False Positive) |
+| **Actual Positive** | 11% (False Negative) | 89% (Correct)        |
+
+#### Conclusion
+Overall, Logistic Regression outperforms Random Forest across all major metrics. It achieves higher precision, recall, and ROC AUC, indicating better generalization.
+The confusion matrix supports this with fewer false predictions.
