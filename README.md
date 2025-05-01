@@ -69,6 +69,6 @@ We built a binary sentiment classification model to predict whether a cleaned te
 - Best model saved based on ```validation loss``` 
 
 #### Evaluation:
-- Test Accuracy: (insert value from final output)
+- Test Accuracy: 74%
 - Model loaded from ```best_model.pt``` 
 
