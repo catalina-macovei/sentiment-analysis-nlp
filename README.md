@@ -46,3 +46,29 @@ Trained two models:
 #### Conclusion
 Overall, Logistic Regression outperforms Random Forest across all major metrics. It achieves higher precision, recall, and ROC AUC, indicating better generalization.
 The confusion matrix supports this with fewer false predictions.
+
+### Sentiment Prediction Model
+We built a binary sentiment classification model to predict whether a cleaned text review is positive or negative.
+
+#### Data:
+1. Input: cleaned_review (preprocessed text)
+2. Label: label (0 = negative, 1 = positive)
+
+#### Model Architecture:
+
+- Embedding Layer (dim=100)
+- 2-layer Bidirectional LSTM (hidden_dim=256)
+- Fully Connected Layer 
+- Dropout (p=0.5)
+- Output: 1 sigmoid-activated unit for binary classification
+
+#### Training:
+- Loss: Binary Cross-Entropy with Logits 
+- Optimizer: Adam 
+- Epochs: 10 
+- Best model saved based on ```validation loss``` 
+
+#### Evaluation:
+- Test Accuracy: (insert value from final output)
+- Model loaded from ```best_model.pt``` 
+
